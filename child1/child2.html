@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    /*--used the body element selector but this can be any element more so divs*/
+body {
+  width: 100px;
+  height: 100px;
+  background-color: violet;
+  animation-name: example;
+  animation-duration: 4s;  
+  /*the infinite value makes the animation continue in a loop: However you can also use a number as a value*/
+  animation-iteration-count: infinite;
+  
+}
+
+@keyframes example {
+  0%   {background-color: pink;}
+  25%  {background-color: yellow;}
+  50%  {background-color: chartreuse;}
+  100% {background-color: orange;}
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>
